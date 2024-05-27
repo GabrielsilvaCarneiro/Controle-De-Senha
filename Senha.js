@@ -20,19 +20,23 @@ form.addEventListener('submit', (event) => {
 
 // Login com Google
 function onGoogleSignIn() {
-    gapi.auth2.getAuthInstance().signIn().then(onGoogleSignInSuccess);
+    if (typeof gapi !== 'undefined') {
+        gapi.auth2.getAuthInstance().signIn().then(onGoogleSignInSuccess);
+    } else {
+        console.error('Google API not loaded.');
+    }
 }
 
 function onGoogleSignInSuccess(googleUser) {
     var profile = googleUser.getBasicProfile();
     alert('Bem-vindo, ' + profile.getName() + '!');
-    
 }
 
 // Login com Apple
 document.addEventListener('DOMContentLoaded', function () {
     loadAppleSDK();
 });
+
 
 function loadAppleSDK() {
     AppleID.auth.init({

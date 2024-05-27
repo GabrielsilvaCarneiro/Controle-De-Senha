@@ -21,12 +21,12 @@ body{
    
     display: flex; 
     margin-top: 10px; 
-    margin-left: 475px;
+    margin-left: 425px;
     flex-direction: column;
     gap: 10px;
     background-color: #ffffff;
     padding: 30px;
-    width: 450px;
+    width: 475px;
     border-radius: 20px;
     border: solid rgb(0, 0, 0) 2px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -143,7 +143,7 @@ body{
 }
 
 .auto{
-    font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: 2px; margin-left: 500px; margin-top: 25px;
+    font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: 2px; margin-left: 450px; margin-top: 25px;
 }
 .express{
     font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 255, 30) ;letter-spacing: 2px; margin-top: 25px;
